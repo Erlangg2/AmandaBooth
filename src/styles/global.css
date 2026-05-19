@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "CantikaCute";
+  src: url("../../public/assets/fonts/Cantika\ Cute\ Handwriting.otf")
+    format("opentype");
+}
+
+body {
+  margin: 0;
+  font-family: "CantikaCute", cursive, sans-serif;
+  background: linear-gradient(135deg, #fff6f8, #ffeef3);
+  color: #8c5b4a;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   WEBCAM FIX
+========================= */
+
+video {
+  /* hilangkan mirror */
+  transform: scaleX(-1) !important;
+
+  /* biar proporsional */
+  object-fit: cover !important;
+
+  /* kualitas visual */
+  border-radius: 20px;
+
+  /* lebih smooth */
+  image-rendering: auto;
+
+  /* background jika loading */
+  background: #000;
+}
+
+/* =========================
+   CANVAS
+========================= */
+
+canvas {
+  image-rendering: auto;
+}
+
+/* =========================
+   BUTTON SMOOTH
+========================= */
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* =========================
+   IMG FIX
+========================= */
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* =========================
+   SCROLLBAR AESTHETIC
+========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffeef3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffb6c8;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9fb2;
+}
